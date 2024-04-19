@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ - Website Vali/Túi Du Lịch</title>
+  <link rel="stylesheet" href="../styles.css">
+    <style>
+        .banner{
+            background-color: orange;
+        }
+        .product {
+          height: 360px;
+          width: 100%;
+        } 
+        
+        .featured-products .product .row {
+          float: left;
+          width: 25%;
+        }
+        .product img{
+          border: 1px solid;
+          border-radius: 6px;
+        }
+        h3 {
+          margin-left: 2px;
+        }
+        .row p {
+          margin-left: 2px;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="TrangChu.html">Trang Chủ</a></li>
+        <li><a href="Products.html">Sản Phẩm</a></li>
+        <li><a href="About.html">Giới Thiệu</a></li>
+        <li><a href="Register.html">Đăng ký</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <h1>
+        <img src="../Hinh/logo.png" alt="" srcset="" width="100%" height="100%">
+      </h1>
+    </div>
+    <div class="login-form">
+      <form>
+        <input type="text" placeholder="Tên đăng nhập">
+        <input type="password" placeholder="Mật khẩu">
+        <button type="submit">Đăng Nhập</button>
+      </form>
+    </div>
+    <div class="search-form">
+        <form action="search.html" method="GET">
+          <input type="text" name="q" placeholder="Tìm kiếm...">
+          <button type="submit">Tìm Kiếm</button>
+        </form>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2>Chào mừng đến với Website Vali/Túi Du Lịch</h2>
+    <p>Chúng tôi cung cấp các sản phẩm vali/túi du lịch chất lượng hàng đầu.</p>
+  </section>
+
+  <section class="featured-products">
+    <h2>Sản Phẩm Nổi Bật</h2>
+    <!-- Danh sách sản phẩm nổi bật -->
+  <div class="product">
+    <div class="row">
+      <img src="../Hinh/Larita Lyra.jpg" alt="Product 1">
+      <h3>Larita Lyra</h3>
+      <p>Giá: 1.399.000 vnd</p>
+    </div>
+    <div class="row">
+      <img src="../Hinh/Larita Siro.jpg" alt="Product 1">
+      <h3>Larita Siro</h3>
+      <p>Giá: 1.499.000 vnd</p>
+    </div>
+    <div class="row">
+      <img src="../Hinh/Pisani Anika.jpg" alt="Product 1">
+      <h3>Pisani Anika</h3>
+      <p>Giá: 1.799.000 vnd</p>
+    </div>
+    <div class="row">
+      <img src="../Hinh/Pisani Dorado.jpg" alt="Product 1">
+      <h3>Pisani Dorado</h3>
+      <p>Giá: 1.499.000 vnd</p>
+    </div>
+    </div>
+    <!-- Thêm sản phẩm khác tương tự -->
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Website Vali/Túi Du Lịch</p>
+  </footer>
+</body>
+</html>
