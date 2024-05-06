@@ -62,6 +62,37 @@ h2 {
   border: 1px solid;
   border-radius: 4px;
 }
+    .news-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 700px;
+}
+
+.news-item h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.news-item p {
+  color: #666;
+}
+
+.news-item .read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-item .read-more:hover {
+  text-decoration: underline;
   </style>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -163,11 +194,23 @@ h2 {
         </div>
     </div>
     <div id="news" class="content">
-        <div class="row">
-            <div class="col-8">                
-                50% Sales các mặt hàng ngày Black Friday!!
-            </div>
-        </div><br>
+      <div class="news-container">
+        <div class="news-item">
+          <h3>Tin Tức 1</h3>
+          <p> 50% Sales các mặt hàng ngày Black Friday!!</p>
+          <a href="#" class="read-more">Xem chi tiết</a>
+        </div>
+        <div class="news-item">
+          <h3>Tin Tức 2</h3>
+          <p>Mở rộng cửa hàng mới tại khu vực trung tâm thành phố.</p>
+          <a href="#" class="read-more">Xem chi tiết</a>
+        </div>
+        <div class="news-item">
+          <h3>Tin Tức 3</h3>
+          <p>Hướng dẫn chọn lựa vali/túi du lịch phù hợp với nhu cầu của bạn.</p>
+          <a href="#" class="read-more">Xem chi tiết</a>
+        </div>
+      </div>
     </div>
   </section>
 
